@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유효성 검사</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validator.js"></script>
+</head>
+
+<body>
+
+  <h1>NAVER</h1>
+
+ <div class="container">
+  <div class = "border">
+    <div class = "text" >아이디</div>
+    <input type="text" placeholder="@naver.com" id="username">
+    <div class="success-message hide">사용할 수 있는 아이디입니다</div>
+    <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+  </div>
+
+  <div class = "border">
+    <div class = "text" >비밀번호</div>
+    <input type="password" placeholder="password" id="password">
+  </div>
+
+  <div class = "border">
+    <div class = "text" >비밀번호 재확인</div>
+    <input type="password" placeholder="passwordcheck" id="password-retype">
+    <div class="mismatch-message hide">비밀번호가 일치하지 않습니다</div>
+  </div>
+
+  <div class = "border">
+    <div class = "text textName">이름</div>
+    <input type="text" id="inputName">
+  </div>
+
+  <div class = "border" >
+    <div class = "text">생년월일</div>
+    <div id = "inputBirthContainer">
+      <input type="text" placeholder="년(연)" id="inputBirth">
+      <select inputBirth="mm">
+        <option id="inputBirth"> 월 </option>
+          <option value="01">1월</option>
+          <option value="02">2월</option>
+          <option value="03">3월</option>
+          <option value="04">4월</option>
+          <option value="05">5월</option>
+          <option value="06">6월</option>
+          <option value="07">7월</option>
+          <option value="08">8월</option>
+          <option value="09">9월</option>                                    
+          <option value="10">10월</option>
+          <option value="11">11월</option>
+          <option value="12">12월</option>
+      </select>
+      <input type="text" placeholder="일" id="inputBirth">
+    </div>
+  </div>
+
+  <div class = "border">
+    <button class = "text" id = "btnText">가입하기</button>
+  </div>
+ </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
+
+body{
+  background-color: lightgray;
+  margin: 30vw;
+  /* border: inline black 3px !important; */
+  padding: 10px;
+  overflow: scroll;
+  
+}
+
+
+
+h1{
+  color : green;
+  text-align: center  ;
+  border: inline black;
+
+ 
+}
+
+
+/* .container{
+  text-align: center;
+  display: block;
+  border: inline black 1px;
+} */
+
+.hide {
+  display: none;
+}
+.success-message,.failure-message, .mismatch-message {
+  font-size: small;
+}
+
+
+.text{
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.textName{
+  margin-top: 20px;
+}
+
+.border{
+  display: flex ;
+  flex-direction: column;
+}
+
+
+
+button{
+  background-color: green;
+  color: white;
+  margin-top: 40px;
+  
+}
+
+#btnText{
+  text-align: center;
+}
+
+#inputBirthContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+#inputBirth{
+  width: 100%;
+  flex-grow: 1, 0, 1;
+}
+
+::placeholder{
+  text-align: right;
+
+}
+
